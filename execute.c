@@ -15,6 +15,7 @@ int _execute(stack_t **stack, char *content, FILE *file, unsigned int counter)
 	instruction_t ops_t[] = {
 					{"push", push},
 					{"pall", pall},
+					{"pint", pint},
 					{NULL, NULL}
 				};
 	unsigned int i = 0;

@@ -63,6 +63,7 @@ void pall(stack_t **head, unsigned int);
 int _execute(stack_t **head, char *content, FILE *file, unsigned int counter);
 void _freestack(stack_t *head);
 void add_stack(stack_t **head, int n);
+void pint(stack_t **head, unsigned int);
 
 
 #endif
