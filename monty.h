@@ -65,6 +65,7 @@ void _freestack(stack_t *head);
 void add_stack(stack_t **head, int n);
 void pint(stack_t **head, unsigned int);
 void pop(stack_t **head, unsigned int);
+void swap(stack_t **head, unsigned int);
 
 
 #endif

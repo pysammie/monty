@@ -17,6 +17,7 @@ int _execute(stack_t **stack, char *content, FILE *file, unsigned int counter)
 					{"pall", pall},
 					{"pint", pint},
 					{"pop", pop},
+					{"swap", swap},
 					{NULL, NULL}
 				};
 	unsigned int i = 0;
