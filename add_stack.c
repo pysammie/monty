@@ -18,13 +18,13 @@ void add_stack(stack_t **head, int n)
 		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	
-	if (temp)
-		temp -> prev = new;
 
-	new -> n = n;
-	new -> next = *head;
-	new -> prev = NULL;
+	if (temp)
+		temp->prev = new;
+
+	new->n = n;
+	new->next = *head;
+	new->prev = NULL;
 
 	*head = new;
 }

@@ -4,7 +4,7 @@
  * pall - prints entire stack
  *
  * @head: points to head of stacked list
- * @n: elements in stack
+ * @counter: not used
  */
 void pall(stack_t **head, unsigned int counter)
 {
@@ -15,9 +15,9 @@ void pall(stack_t **head, unsigned int counter)
 	if (list == NULL)
 		return;
 
-	while(list)
+	while (list)
 	{
-		printf("%d\n", list -> n);
-		list = list -> next;
+		printf("%d\n", list->n);
+		list = list->next;
 	}
 }

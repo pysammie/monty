@@ -41,8 +41,8 @@ int main(int argc, char **argv)
 		{
 			_execute(&stack, content, file, counter);
 		}
-
 	}
+	free(content);
 	_freestack(stack);
 	fclose(file);
 
