@@ -70,6 +70,9 @@ void add(stack_t **head, unsigned int);
 void nop(stack_t **head, unsigned int);
 void sub(stack_t **head, unsigned int);
 void _div(stack_t **head, unsigned int);
+void _mul(stack_t **head, unsigned int);
+void _mod(stack_t **head, unsigned int);
+void pchar(stack_t **head, unsigned int);
 
 
 #endif

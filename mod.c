@@ -1,15 +1,16 @@
 #include "monty.h"
 
 /**
- * _div - divides second element by top element
+ * _mod = computes remainder of division of top element by 
+ * second top element
  *
  * @head: pointer to head of stacked list
  * @counter: line number
  */
-void _div(stack_t **head, unsigned int counter)
+void _mod(stack_t **head, unsigned int counter)
 {
 	stack_t *s;
-	int a, b, res, count = 0;
+	int a, b, rem, count = 0;
 
 	s = *head;
 	while (s)
@@ -20,7 +21,7 @@ void _div(stack_t **head, unsigned int counter)
 
 	if (count < 2)
 	{
-		fprintf(stderr, "L%u: can't div, stack too short\n", counter);
+		fprintf(stderr, "L%u: can't mod, stack too short\n", counter);
 		fclose(cmd.file);
 		free(cmd.content);
 		_freestack(*head);
@@ -33,15 +34,14 @@ void _div(stack_t **head, unsigned int counter)
 
 	if (a == 0)
 	{
-		fprintf(stderr, "L%u: division by zero\n", counter);
+		fprintf(stderr, "L%u: division ny zero\n", counter);
 		fclose(cmd.file);
 		free(cmd.content);
 		_freestack(*head);
 		exit(EXIT_FAILURE);
 	}
-
-	res = b / a;
-	s->next->n = res;
+	rem = b % a;
+	s->next->n = rem;
 	*head = s->next;
 	free(s);
 }
